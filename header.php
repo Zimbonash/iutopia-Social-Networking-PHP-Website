@@ -118,7 +118,7 @@ else
  "<li><a href='signup.php'>Sign up</a></li>" .
  "<li><a href='login.php'>Log in</a></li></ul></br>.
  <span class='info'>&#8658; You must be logged in to " .
- "Add and Review Articles | Connect with Utopian Friends.</span>.</div> ");
+ "Add and Review Articles | Connect with Utopian Friends :).</span>.</div> ");
 }
 
 ?>
