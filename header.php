@@ -5,17 +5,19 @@ echo <<<_END
 <html>
 <!--I, Tinashe Would like to challenge you to decode the meaning of the sliding message in Green and Yellow. Good luck! -->
   <head>
-    <script src='./js/OSC.js'></script>
-    <script src='./js/app.js'></script>
-    <script src='./js/angular.js'></script>
-    <script src='./js/angular.min.js'></script>
-    <script src='./js/jquery-3.6.0.js'></script>
-    <link rel='stylesheet' href='./styles/styles.css' type='text/css'/>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='./assets/js/OSC.js'></script>
+    <script src='./assets/js/app.js'></script>
+    <script src='./assets/js/angular.js'></script>
+    <script src='./assets/js/angular.min.js'></script>
+    <script src='./assets/js/jquery-3.6.0.js'></script>
+    <link rel='stylesheet' href='./assets/styles/styles.css' type='text/css'/>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script>
     <script>    </script>
 
+    
 _END;
 
 require 'functions.php';
@@ -43,15 +45,10 @@ if ($loggedin == TRUE)
 
 <body>
 <div class='header' style='background:none;' >
- <aside class='col1-header'>
- <marquee behavior='scroll' style='background: #020e05;    opacity: 0; z-index: 10; font-family: Microsoft JhengHei SYSTEM-UI; padding-top: 5px; margin-top: 50px; width: 250px; height: 25px; font-size: 15px;    border: 5px solid #000000;    color: #ffffff;    border: 1px solid #8ce27d;    grid-area: none;    border-radius: 10px;; grid-area: none;  outline-offset: revert;  perspective-origin: center;  border-radius: 10px;' direction='left' onmouseover='this.stop();' onmouseout='this.start();' >
-<script>document.write(new Date());</script>
- </marquee>
 
- </aside>
 
- <aside class='col2-header'><a href='index.php'><h1><span id='t1'>THE</span><span id='t2'> iDEA</span><span id='t3'> OF</span><span id='t4'> UTOPIA</span></h1></a></br>
- <p id='tagline' style='margin-top: -99px; '> #Exploring ideas around the vision for the Future.</p>
+ <aside class='col2-header'><a href='index.php'><h1><span id='t1'>THE</span><span id='t2'> iDEA</span><span id='t3'> OF </span><span id='t4'>UTOPIA</span></h1></a></br>
+ <p id='tagline' style='margin-top: -70px; '> #Exploring ideas around the vision for the Future.</p>
  <!--<input id='searchbar' name='Search Bar' placeholder='Type-In Search n Discover'> </input>-->
  </aside>
 
@@ -88,7 +85,7 @@ else
 
  </aside>
 
- <aside class='col2-header'><h1><span id='t1'>THE</span><span id='t2'> iDEA</span><span id='t3'> OF</span><span id='t4'> UTOPIA</span></h1></br>
+ <aside class='col2-header'><h1><span id='t1'>THE</span><span id='t2'> iDEA</span><span id='t3'> OF </span><span id='t4'>UTOPIA</span></h1></br>
  <p id='tagline'> #Exploring ideas around the vision for the Future.</p>
  <input id='searchbar' name='Search Bar' placeholder='Type-In Search n Discover'> </input>
  </aside>
