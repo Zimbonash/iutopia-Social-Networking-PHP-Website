@@ -5,11 +5,8 @@ echo <<<_END
 <html>
 <!--I, Tinashe Would like to challenge you to decode the meaning of the sliding message in Green and Yellow. Good luck! -->
   <head>
-    <script src='./js/OSC.js'></script>
     <script src='./js/app.js'></script>
-  
     <link rel='stylesheet' href='./styles/styles.css' type='text/css'/>
-    
 
 _END;
 
