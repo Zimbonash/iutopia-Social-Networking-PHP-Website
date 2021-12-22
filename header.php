@@ -7,14 +7,9 @@ echo <<<_END
   <head>
     <script src='./js/OSC.js'></script>
     <script src='./js/app.js'></script>
-    <script src='./js/angular.js'></script>
-    <script src='./js/angular.min.js'></script>
-    <script src='./js/jquery-3.6.0.js'></script>
+  
     <link rel='stylesheet' href='./styles/styles.css' type='text/css'/>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'></script>
-    <script>    </script>
+    
 
 _END;
 
