@@ -8,9 +8,9 @@ echo <<<_END
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <script src='./assets/js/OSC.js'></script>
     <script src='./assets/js/app.js'></script>
-    <script src='./assets/js/angular.js'></script>
+  <!--  <script src='./assets/js/angular.js'></script>
     <script src='./assets/js/angular.min.js'></script>
-    <script src='./assets/js/jquery-3.6.0.js'></script>
+    <script src='./assets/js/jquery-3.6.0.js'></script> -->
     <link rel='stylesheet' href='./assets/styles/styles.css' type='text/css'/>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js'></script>
@@ -38,7 +38,7 @@ _END;
 if ($loggedin == TRUE)
 {
 
- echo "
+ echo <<<_END
  <title>$appname$userstr</title>
  <link rel='stylesheet' href='./styles.css' type='text/css'/>
 </head>
@@ -68,10 +68,11 @@ if ($loggedin == TRUE)
  "<li><a href='articles+.php'>Post Article</a></li>" .
  "<li><a href='profile.php'>Edit Profile</a></li>" .
  "<li><a href='logout.php'>Log out</a></li></ul><br /></div>";
+ _END;
 }
 else
 {
- echo ("
+ echo <<<_END
  <title>$appname$userstr</title>
  <link rel='stylesheet' href='./styles.css' type='text/css'/>
 </head>
@@ -116,6 +117,8 @@ else
  "<li><a href='login.php'>Log in</a></li></ul></br>.
  <span class='info'>&#8658; You must be logged in to " .
  "Add and Review Articles | Connect with Utopian Friends :).</span>.</div> ");
+
+ _END;
 }
 
 ?>
