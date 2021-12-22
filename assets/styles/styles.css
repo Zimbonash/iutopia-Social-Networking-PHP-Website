@@ -323,7 +323,7 @@
                 
                 @media screen and (max-width: 1200px) and (min-width:601px) {}
                 
-                @media screen and (max-width: 650px) and (min-width:300px) {
+                @media screen and (max-width: 650px) and (min-width:310px) {
                     .header {
                         margin-left: 0px !important;
                         /* width: auto !important; */
