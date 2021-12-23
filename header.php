@@ -1,4 +1,5 @@
 <?php // header.php
+require 'functions.php';
 session_start();
 echo <<<_END
 <!DOCTYPE html>\n
@@ -10,7 +11,6 @@ echo <<<_END
 
 _END;
 
-require 'functions.php';
 $userstr = '';
 if (isset($_SESSION['user']))
 {
@@ -28,7 +28,8 @@ _END;
 if ($loggedin == TRUE)
 {
 
- echo "
+ echo <<<_END
+"
  <title>$appname$userstr</title>
  <link rel='stylesheet' href='./styles.css' type='text/css'/>
 </head>
@@ -62,11 +63,14 @@ if ($loggedin == TRUE)
  "<li><a href='messages.php'>Messages</a></li>" .
  "<li><a href='articles+.php'>Post Article</a></li>" .
  "<li><a href='profile.php'>Edit Profile</a></li>" .
- "<li><a href='logout.php'>Log out</a></li></ul><br /></div>";
+ "<li><a href='logout.php'>Log out</a></li></ul><br /></div>"
+ 
+_END;
 }
 else
 {
- echo ("
+ echo <<<_END
+"
  <title>$appname$userstr</title>
  <link rel='stylesheet' href='./styles.css' type='text/css'/>
 </head>
@@ -110,7 +114,11 @@ else
  "<li><a href='signup.php'>Sign up</a></li>" .
  "<li><a href='login.php'>Log in</a></li></ul></br>.
  <span class='info'>&#8658; You must be logged in to " .
- "Add and Review Articles | Connect with Utopian Friends :).</span>.</div> ");
+ "Add and Review Articles | Connect with Utopian Friends :).</span>.</div> 
+ ")
+  _END;
+
 }
+
 
 ?>
