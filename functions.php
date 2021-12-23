@@ -1,4 +1,5 @@
 <?php // functions.php
+
 $dbhost = 'c8u4r7fp8i8qaniw.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
 $dbname = 'x9g2e7im7tcmaose';
 $dbuser = 'ffi30ffxo5w3k8iu';
@@ -7,6 +8,7 @@ $appname = "THE iDEA OF UTOPIA";
 
 $dbserver = mysqli_connect($dbhost, $dbuser, $dbpass) or die(mysqli_error($dbserver));
  mysqli_select_db($dbserver, $dbname) or die();
+
 
 // $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 // $cleardb_server = $cleardb_url["host"];
