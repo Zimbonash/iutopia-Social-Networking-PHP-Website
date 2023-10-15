@@ -1,17 +1,25 @@
 <?php // functions.php
-
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
+// Heroku DB ClearDB
+// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $cleardb_server = $cleardb_url["host"];
+// $cleardb_username = $cleardb_url["user"];
+// $cleardb_password = $cleardb_url["pass"];
+// $cleardb_db = substr($cleardb_url["path"],1);
+// $active_group = 'default';
+// $query_builder = TRUE;
 // Connect to DB
-$dbserver = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
+// XXAMP MYSQLi
+$dbserver = "localhost";
+$db_name = "iUtopia";
+$db_username = "root";
+$db_password = "";
 
 
-mysqli_select_db($cleardb_server, $cleardb_db) or die();
+$db_server = mysqli_connect($dbserver, $db_username, $db_password, $db_name);
+
+
+mysqli_select_db($db_server, $db_name) or die();
 
 
 function querymysql($dbserver, $query)
