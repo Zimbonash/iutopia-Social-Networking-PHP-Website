@@ -1,18 +1,27 @@
 <?php // functions.php
 
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$dbserver = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+$dbhost = 'c8u4r7fp8i8qaniw.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+$dbname = 'x9g2e7im7tcmaose';
+$dbuser = 'ffi30ffxo5w3k8iu';
+$dbpass = 'rz1hm2gcpzhizann';
+$appname = "THE iDEA OF UTOPIA";
+
+$dbserver = mysqli_connect($dbhost, $dbuser, $dbpass) or die(mysqli_error($dbserver));
+ mysqli_select_db($dbserver, $dbname) or die();
 
 
-mysqli_select_db($cleardb_server, $cleardb_db) or die();
+// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $cleardb_server = $cleardb_url["host"];
+// $cleardb_username = $cleardb_url["user"];
+// $cleardb_password = $cleardb_url["pass"];
+// $cleardb_db = substr($cleardb_url["path"],1);
+// $active_group = 'default';
+// $query_builder = TRUE;
+// // Connect to DB
+// $dbserver = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
+// mysqli_select_db($dbserver, $cleardb_db) or die();
+mysqli_select_db($dbserver, $dbname) or die();
 
 function querymysql($dbserver, $query)
 {

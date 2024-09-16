@@ -70,7 +70,9 @@ if (isset($_POST['user']))
  <input class = 'finput' type='text' maxlength='' name='email' placeholder='Enter Your Email Address' value='$email'/>
  <input class = 'finput' type='text' maxlength='' name='phone' placeholder='Enter Your Phone Number' value='$phone'/><br/><br/>
  <input class = 'finput' type='text' maxlength='' name='dob'  placeholder='Enter Your DOB' value='$dob'/>
+ <label>Interests </label>
  <select class = 'finput' type='text' name="interest" size="5" multiple="multiple">
+
       <option value="Interest">Interest</option>
       <option value="A.I">Artificial Intelligence</option>
       <option value="War&Politics">War & Politics</option>
